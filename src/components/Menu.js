@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
+import v1 from "../../ManganDaKita.mp4";
 
 const Menu = ({
   user,
@@ -47,7 +48,7 @@ const Menu = ({
         <div className="d-flex flex-column align-items-start mt-5 mb-4">
           <div className="align-self-center">
             <video width="500px" controls>
-              <source src="../../ManganDaKita.mp4" type="video/mp4"></source>
+              <source src="{v1}" type="video/mp4"></source>
             </video>
           </div>
           <div className="mt-4 mb-0 d-flex flex-column w-100">
