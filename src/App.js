@@ -31,7 +31,7 @@ function App() {
 
   async function isAuth() {
     try {
-      const response = await fetch("http://localhost:5000/is-verify", {
+      const response = await fetch("https://assessment-server1.herokuapp.com/is-verify", {
         method: "GET",
         headers: { token: localStorage.token },
       });
@@ -48,7 +48,7 @@ function App() {
 
   const fetchUser = async () => {
     try {
-      const response = await fetch("http://localhost:5000/user", {
+      const response = await fetch("https://assessment-server1.herokuapp.com/user", {
         method: "GET",
         headers: {
           token: localStorage.getItem("token"),
