@@ -103,7 +103,7 @@ const Add = ({ user, setUserIsAuthenticated }) => {
   return (
     <div>
       <>
-        <Nav user={user} setAuthenticated={setUserIsAuthenticated} />
+        <Nav user={user} setUser={setUser} setAuthenticated={setUserIsAuthenticated} />
         <section className="bg-light pt-2">
           <div className="container px-5 my-4 px-5">
             <div className="text-center mb-4">
