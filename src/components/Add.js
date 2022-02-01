@@ -50,7 +50,7 @@ const Add = ({ user, setUserIsAuthenticated }) => {
           totalamount: quantity * price,
         };
 
-        const response = await fetch("http://localhost:5000/add", {
+        const response = await fetch("https://assessment-server1.herokuapp.com/add", {
           method: "POST",
           headers: {
             token: localStorage.getItem("token"),
@@ -83,7 +83,7 @@ const Add = ({ user, setUserIsAuthenticated }) => {
 
   const fetchMenu = async () => {
     try {
-      const response = await fetch("http://localhost:5000/readitem", {
+      const response = await fetch("https://assessment-server1.herokuapp.com/readitem", {
         headers: { token: localStorage.token },
       });
       const data = await response.json();
