@@ -12,7 +12,7 @@ const Orders = ({ user, setAdminAuthenticated }) => {
 
   const fetchOrders = async () => {
     try {
-      const OrdertFetch = await fetch("http://localhost:5000/read", {
+      const OrdertFetch = await fetch("https://assessment-server1.herokuapp.com/read", {
         headers: { token: localStorage.token },
       });
       const data = await OrdertFetch.json();
@@ -32,7 +32,7 @@ const Orders = ({ user, setAdminAuthenticated }) => {
     try {
       const body = { id, status };
 
-      const response = await fetch("http://localhost:5000/edit", {
+      const response = await fetch("https://assessment-server1.herokuapp.com/edit", {
         method: "PUT",
         headers: {
           token: localStorage.getItem("token"),
