@@ -22,7 +22,7 @@ const Register = () => {
       e.preventDefault();
       if (username && password && fname && lname && address) {
         const body = { username, password, fname, lname, address };
-        const response = await fetch("http://localhost:5000/register", {
+        const response = await fetch("https://assessment-server1.herokuapp.com/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
