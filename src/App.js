@@ -242,7 +242,7 @@ function App() {
           {!userIsAuthenticated ? (
             <Redirect to="/login" />
           ) : (
-            <Add user={user} setUserIsAuthenticated={setUserIsAuthenticated} />
+            <Add user={user} setUser={setUser} setUserIsAuthenticated={setUserIsAuthenticated} />
           )}
         </Route>
       </Switch>
