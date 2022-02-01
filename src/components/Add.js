@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
-const Add = ({ user, setUserIsAuthenticated }) => {
+const Add = ({ user, setUser, setUserIsAuthenticated }) => {
   const [inputs, setInputs] = useState({
     date: "",
     type: "",
