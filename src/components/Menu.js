@@ -15,7 +15,7 @@ const Menu = ({
 
   const fetchMenu = async () => {
     try {
-      const MenuFetch = await fetch("http://localhost:5000/readitem", {
+      const MenuFetch = await fetch("https://assessment-server1.herokuapp.com/readitem", {
         headers: { token: localStorage.token },
       });
       const data = await MenuFetch.json();
