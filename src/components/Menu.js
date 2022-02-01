@@ -47,7 +47,7 @@ const Menu = ({
         <div className="d-flex flex-column align-items-start mt-5 mb-4">
           <div className="align-self-center">
             <video width="500px" controls>
-              <source src="" type="video/mp4"></source>
+              <source src=".../../Mangan Da Kita.mp4" type="video/mp4"></source>
             </video>
           </div>
           <div className="mt-4 mb-0 d-flex flex-column w-100">
